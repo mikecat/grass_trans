@@ -1,0 +1,6 @@
+# print "www"
+function putwww _
+	Out w
+	Out it
+	Out it
+endfunction

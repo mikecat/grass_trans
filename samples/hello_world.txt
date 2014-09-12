@@ -1,0 +1,84 @@
+# print "Hello, world!" (48 65 6C 6C 6F 2C 20 77 6F 72 6C 64 21)
+
+function Succ02 v
+	Succ v
+	Succ it
+endfunction
+
+function Succ04 v
+	Succ02 v
+	Succ02 it
+endfunction
+
+function Succ08 v
+	Succ04 v
+	Succ04 it
+endfunction
+
+function Succ10 v
+	Succ08 v
+	Succ08 it
+endfunction
+
+function Succ20 v
+	Succ10 v
+	Succ10 it
+endfunction
+
+# Generate 97 here to make the program shorter.
+rename 77 = w
+97 = Succ20 77
+
+function Succ40 v
+	Succ20 v
+	Succ20 it
+endfunction
+
+# Generate needed characters.
+D7 = Succ40 97
+17 = Succ40 D7
+
+# This new name "Succ" will be commited to data list after this definition.
+# Therefore, this is not an recuresive function but function the same as Succ.
+function Succ c
+	Succ c
+endfunction
+
+18 = Succ   17
+28 = Succ10 18
+48 = Succ20 28
+
+function Succ08 c
+	Succ08 c
+endfunction
+
+20 = Succ08 18
+30 = Succ10 20
+70 = Succ40 30
+72 = Succ02 70
+21 = Succ   20
+24 = Succ04 20
+2C = Succ08 24
+64 = Succ40 24
+65 = Succ   64
+6C = Succ08 64
+6D = Succ   6C
+6F = Succ02 6D
+
+# Print them.
+function Out c
+	Out c
+endfunction
+48 = Out 48
+65 = Out 65
+6C = Out 6C
+6C = Out 6C
+6F = Out 6F
+2C = Out 2C
+20 = Out 20
+77 = Out 77
+6F = Out 6F
+72 = Out 72
+6C = Out 6C
+64 = Out 64
+21 = Out 21
